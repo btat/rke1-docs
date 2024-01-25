@@ -1,7 +1,7 @@
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'RKE1',
+  title: 'RKE1 Enterprise',
 
 
   customFields: {
