@@ -3,7 +3,7 @@ name: GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main2
 
 jobs:
   deploy:
@@ -20,8 +20,16 @@ jobs:
         run: |
           yarn install --frozen-lockfile
           yarn build
+          yarn build --config enterprise.config.js --out-dir build_enterprise
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
+      - name: Copy enterprise build output to branch
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: ent-pages
+          FOLDER: build_enterprise
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
