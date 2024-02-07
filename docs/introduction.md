@@ -18,3 +18,8 @@ Line 2 of filler content right here. bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 A third line of text.ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
 A final bit of test text.dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+
+<dl>
+  <dt>Term</dt>
+  <dd>Definition</dd>
+</dl>

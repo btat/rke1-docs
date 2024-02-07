@@ -5,7 +5,7 @@ module.exports = {
 
 
   customFields: {
-    isEnterprise: true,
+    isEnterprise: false,
   },
 
 

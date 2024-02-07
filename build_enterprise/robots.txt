@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://rke.docs.rancher.com/sitemap.xml
