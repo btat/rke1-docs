@@ -41,7 +41,7 @@ SOME INSTRUCTIONS
 
 1. FINISH TASK
 
-export const Enterprise = ({children}) => (
+<!-- export const Enterprise = ({children}) => (
   
   <span
     style={{
@@ -49,9 +49,20 @@ export const Enterprise = ({children}) => (
     }}>
     {children}  {useDocusaurusContext().siteConfig.customFields.isEnterprise==false?<code>helm repo add rancher-prime https://charts.rancher.com/server-charts/prime</code>:<code>helm repo add rancher-stable https://releases.rancher.com/server-charts/stable</code>}
   </span>
-);
+); -->
 
-<Enterprise>this is ENTERPRISE ONLY text</Enterprise>
-r
+import {Enterprise, Community} from '@site/src/components/Enterprise';
 
-I can write **Markdown** alongside my _JSX_!
+<Enterprise>this is ENTERPRISE ONLY text ---</Enterprise>
+<Community>now we have COMMUNITY ONLY content here</Community>
+
+Filler line 1. More text here. aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+Line 2 of filler content right here. bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+A third line of text.ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+A final bit of test text.dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+
+
+
